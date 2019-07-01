@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         facebookButton = findViewById(R.id.button_facebook);
         List<String> permissionNeeds = Arrays.asList("user_photos", "email",
-                "user_birthday", "public_profile", "AccessToken");
+                "user_birthday", "public_profile");
         mLoginButton.setPermissions(permissionNeeds);
         mLoginManager = LoginManager.getInstance();
         accessToken = AccessToken.getCurrentAccessToken();
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         facebookButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                mLoginButton.performClick();
             }
         });
 

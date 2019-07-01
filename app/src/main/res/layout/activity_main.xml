@@ -14,6 +14,8 @@
         <com.facebook.login.widget.LoginButton
             android:id="@+id/login_button"
             android:layout_width="wrap_content"
+            android:visibility="gone"
+
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal" />
 
@@ -23,7 +25,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:backgroundTint="#687BFD"
-            android:visibility="gone"
             android:text="Sign in Facebook" />
 
     </FrameLayout>
